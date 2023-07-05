@@ -23,7 +23,7 @@ set st_major ="CSE"
 where st_id=1;
 
 select * from Students;
-
+----
 
 delete from Students
 
