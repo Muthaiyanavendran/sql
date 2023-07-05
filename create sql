@@ -1,0 +1,38 @@
+create database University;
+use University;
+create table Students(
+st_id int primary key,
+st_name varchar(7),
+st_age int,
+st_major varchar(50));
+
+insert into  Students values(1,"karthi",20,"computer science");
+insert into Students values(2,"selva",21,"ECE");
+insert into  Students values(3,"gusi",21,"CSE");
+insert into Students values(4,"Abu",19,"ECE");
+insert into  Students values(5,"Raya",20,"ECE");
+
+select * from Students;
+select * from Students
+where  st_major like 'c%';
+
+select max(st_age) from Students;
+
+update Students
+set st_major ="CSE"
+where st_id=1;
+
+select * from Students;
+
+
+delete from Students
+
+where st_id=4;
+
+
+
+
+
+
+
+
